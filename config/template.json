@@ -1,0 +1,17 @@
+{
+  "templates": [{
+      "name": "react",
+      "host": "https://github.com",
+      "username": "babyfaceqian",
+      "repo": "templates",
+      "branch": "react"
+    },
+    {
+      "name": "d3",
+      "host": "https://github.com",
+      "username": "babyfaceqian",
+      "repo": "templates",
+      "branch": "d3"
+    }
+  ]
+}

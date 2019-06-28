@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+const program = require('commander');
+const chalk = require('chalk');
+
+program
+   .version(require('../package').version, '-v, --version')
+
+ program
+   .command('init')
+   .description('run remote setup commands')
+   .action((argv) => {
+    require('../lib/init')(argv);
+   });
+
+
+ program.parse(process.argv);
