@@ -1,7 +1,11 @@
 {
   "name": "mic-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A client for generating front-end project frameworks",
+  "keywords": [
+    "mic-cli",
+    "mic"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +18,7 @@
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "execa": "^2.0.1",
-    "inquirer": "^6.4.1"
+    "inquirer": "^6.4.1",
+    "listr": "^0.14.3"
   }
 }

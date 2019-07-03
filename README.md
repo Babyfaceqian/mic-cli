@@ -1,0 +1,1 @@
+A client for generating front-end project frameworks.

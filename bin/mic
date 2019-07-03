@@ -1,16 +1,33 @@
 #!/usr/bin/env node
 const program = require('commander');
-const chalk = require('chalk');
 
 program
-   .version(require('../package').version, '-v, --version')
+  .version(require('../package').version, '-v, --version')
 
- program
-   .command('init')
-   .description('run remote setup commands')
-   .action((argv) => {
+program
+  .command('init')
+  .description('initial a template')
+  .action(argv => {
     require('../lib/init')(argv);
-   });
+  })
+program
+  .command('deploy')
+  .description('deploy to test environment')
+  .action(argv => {
+    require('../lib/deploy')(argv);
+  })
 
+program
+  .command('build')
+  .description('build')
+  .action(argv => {
+    require('../lib/build')(argv);
+  })
 
- program.parse(process.argv);
+program
+  .command('branch')
+  .description('checkout a develop branch from master')
+  .action(argv => {
+    require('../lib/branch')(argv);
+  })
+program.parse(process.argv);
