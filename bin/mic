@@ -3,31 +3,22 @@ const program = require('commander');
 
 program
   .version(require('../package').version, '-v, --version')
-
 program
   .command('init')
-  .description('initial a template')
+  .description('选择并下载模板')
   .action(argv => {
     require('../lib/init')(argv);
   })
 program
-  .command('deploy')
-  .description('deploy to test environment')
-  .action(argv => {
-    require('../lib/deploy')(argv);
+  .command('checkout [branchType]')
+  .description('新建或切换到某个类型分支')
+  .action(type => {
+    require('../lib/createBranch/create')(type);
   })
-
 program
-  .command('build')
-  .description('build')
-  .action(argv => {
-    require('../lib/build')(argv);
-  })
-
-program
-  .command('branch')
-  .description('checkout a develop branch from master')
-  .action(argv => {
-    require('../lib/branch')(argv);
+  .command('merge [branchName]')
+  .description('合并或变基到下游分支')
+  .action(type => {
+    require('../lib/mergeBranch/merge')(type);
   })
 program.parse(process.argv);

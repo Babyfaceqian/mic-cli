@@ -1,12 +1,12 @@
 {
   "templates": [{
       "name": "react",
-      "repo": "https://github.com/babyfaceqian/templates.git",
+      "repo": "https://github.com/username/templates.git",
       "branch": "react"
     },
     {
       "name": "d3",
-      "repo": "https://github.com/babyfaceqian/templates.git",
+      "repo": "https://github.com/username/templates.git",
       "branch": "d3"
     }
   ]
