@@ -1,6 +1,6 @@
 {
   "name": "mic-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A node client for generating project templates and code management",
   "keywords": [
     "mic-cli",
