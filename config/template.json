@@ -1,13 +1,23 @@
 {
   "templates": [{
       "name": "react",
-      "repo": "https://github.com/username/templates.git",
+      "repo": "https://github.com/babyfaceqian/templates.git",
       "branch": "react"
     },
     {
-      "name": "d3",
-      "repo": "https://github.com/username/templates.git",
-      "branch": "d3"
+      "name": "react-mobx",
+      "repo": "https://github.com/babyfaceqian/templates.git",
+      "branch": "react-mobx"
+    },
+    {
+      "name": "react-ts",
+      "repo": "https://github.com/babyfaceqian/templates.git",
+      "branch": "react-ts"
+    },
+    {
+      "name": "react-ts-mobx",
+      "repo": "https://github.com/babyfaceqian/templates.git",
+      "branch": "react-ts-mobx"
     }
   ]
 }
