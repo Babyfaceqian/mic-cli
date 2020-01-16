@@ -21,4 +21,10 @@ program
   .action(type => {
     require('../lib/mergeBranch/merge')(type);
   })
+program
+  .command('help')
+  .description('帮助信息')
+  .action(() => {
+    require('../lib/help')();
+  })
 program.parse(process.argv);
