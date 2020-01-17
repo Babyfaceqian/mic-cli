@@ -7,19 +7,31 @@ program
   .command('init')
   .description('选择并下载模板')
   .action(argv => {
-    require('../lib/init')(argv);
+    require('../scripts/init')(argv);
   })
 program
   .command('checkout [branchType]')
   .description('新建或切换到某个类型分支')
   .action(type => {
-    require('../lib/createBranch/create')(type);
+    require('../scripts/checkout')(type);
   })
 program
   .command('merge [branchName]')
   .description('合并或变基到下游分支')
   .action(type => {
-    require('../lib/mergeBranch/merge')(type);
+    require('../scripts/merge')(type);
+  })
+program
+  .command('dev')
+  .description('启动开发')
+  .action(() => {
+    require('../scripts/dev')();
+  })
+program
+  .command('build')
+  .description('打包')
+  .action(() => {
+    require('../scripts/build')();
   })
 program
   .command('help')
